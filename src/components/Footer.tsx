@@ -26,19 +26,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className={styles.footerSection}>
-          <h3>Connect With Us</h3>
-          <div className={styles.socialIcons}>
-            <a href="#" aria-label="YouTube"><FaYoutube /></a>
-            <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
-            <a href="#" aria-label="Instagram"><FaInstagram /></a>
-            <a href="#" aria-label="Facebook"><FaFacebook /></a>
-          </div>
-          <div className={styles.subscribe}>
-            <a href="/calendar.ics" className="btn btn-primary" style={{marginTop: '1rem', padding: '0.5rem 1rem', fontSize: '0.9rem'}}>Subscribe to Calendar (iCal)</a>
-          </div>
-        </div>
-
       </div>
       <div className={styles.footerBottom}>
         <p>&copy; {new Date().getFullYear()} Sri Veerakethamma Temple Trust. All Rights Reserved.</p>
