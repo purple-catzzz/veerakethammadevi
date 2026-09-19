@@ -1,0 +1,75 @@
+.footer {
+  background-color: var(--primary-maroon);
+  color: #fff;
+  padding: 4rem 0 0 0;
+  margin-top: auto;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footerSection h3 {
+  color: var(--primary-gold);
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.footerSection p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerSection ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footerSection ul li a {
+  opacity: 0.9;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.footerSection ul li a:hover {
+  opacity: 1;
+  color: var(--primary-saffron);
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+  background-color: var(--primary-saffron);
+  transform: translateY(-3px);
+}
+
+.footerBottom {
+  background-color: var(--accent-dark);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

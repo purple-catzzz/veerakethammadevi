@@ -1,0 +1,251 @@
+.sevasPage {
+  background-color: var(--background);
+  min-height: 80vh;
+}
+
+.heroSection {
+  background-color: var(--primary-maroon);
+  background-image: linear-gradient(rgba(128, 0, 0, 0.8), rgba(128, 0, 0, 0.9)), url('/architecture.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  border-bottom: 6px solid var(--primary-gold);
+}
+
+.heroContent h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.heroDivider {
+  font-size: 2.5rem;
+  color: var(--primary-gold);
+  margin: 0.5rem 0;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  color: var(--primary-gold);
+  letter-spacing: 0.5px;
+}
+
+.mainContent {
+  padding: 4rem 1rem;
+  max-width: 900px;
+}
+
+/* Sevas List View */
+.portalHeader {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.portalHeader h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.portalHeader p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sevasList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sevaCard {
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-left: 6px solid var(--primary-maroon);
+  border-radius: 4px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sevaCard:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.sevaInfo {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.sevaIcon {
+  font-size: 2rem;
+  color: var(--primary-saffron);
+  background: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.sevaDetails h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.sevaTimings {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-maroon);
+  background-color: rgba(128, 0, 0, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.sevaDetails p {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.sevaAction {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .sevaCard {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+  .sevaAction {
+    text-align: right;
+  }
+}
+
+/* Booking Form View */
+.bookingFormContainer {
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-top: 6px solid var(--primary-saffron);
+  border-radius: 4px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.formHeader {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1.5rem;
+}
+
+.formHeader h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.inputIcon {
+  color: var(--primary-saffron);
+}
+
+.formGroup input {
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: var(--primary-saffron);
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.cancelBtn {
+  background: none;
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 1.5rem;
+  border-radius: 2px;
+  font-weight: 600;
+  font-family: var(--font-serif);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.cancelBtn:hover {
+  background-color: #eee;
+}
+
+/* Success Message */
+.successMessage {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--surface);
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.successIcon {
+  font-size: 4rem;
+  color: #27ae60;
+  margin-bottom: 1.5rem;
+}
+
+.successMessage h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #27ae60;
+}
+
+.successMessage p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}

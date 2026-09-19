@@ -1,0 +1,64 @@
+.detailPage {
+  background-color: var(--background);
+  min-height: 70vh;
+  padding: 4rem 0;
+}
+
+.contentWrapper {
+  max-width: 800px;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-saffron);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  transition: opacity 0.2s;
+}
+
+.backBtn:hover {
+  opacity: 0.8;
+}
+
+.messageBox {
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--primary-maroon);
+  border-radius: 4px;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.icon {
+  font-size: 3rem;
+  color: var(--primary-gold);
+  margin-bottom: 1.5rem;
+}
+
+.messageBox h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.statusText {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary-maroon);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto;
+}

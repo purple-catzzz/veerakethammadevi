@@ -1,0 +1,131 @@
+.aboutPage {
+  background-color: var(--background);
+}
+
+.heroSection {
+  background-color: var(--primary-maroon);
+  background-image: linear-gradient(rgba(128, 0, 0, 0.8), rgba(128, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1590393967824-7622d99723bd?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  border-bottom: 4px solid var(--primary-gold);
+}
+
+.heroContent h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.mainContent {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .section {
+    grid-template-columns: 3fr 2fr; /* Give more room to text, less to image */
+  }
+
+  .reverseLayout .textContent {
+    order: 2;
+  }
+
+  .reverseLayout .imageWrapper {
+    order: 1;
+  }
+}
+
+.textContent h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.textContent h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: var(--primary-gold);
+}
+
+.textContent p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sideImage {
+  width: 100%;
+  max-width: 380px; /* Constrained width so it's not a massive block */
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border: 6px solid var(--surface); /* Elegant frame effect */
+  outline: 1px solid var(--primary-gold);
+}
+
+.committeeList {
+  background-color: var(--accent-light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-maroon);
+  margin-top: 2rem;
+}
+
+
+.committeeList h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-maroon);
+}
+
+
+.committeeList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.committeeList ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+
+.committeeList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.committeeList ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}

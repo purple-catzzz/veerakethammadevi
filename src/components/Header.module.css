@@ -1,0 +1,124 @@
+.announcementStrip {
+  background-color: var(--primary-maroon);
+  color: var(--primary-gold);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.learnMore {
+  text-decoration: underline;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  color: #fff;
+}
+
+.header {
+  background-color: var(--surface);
+  border-bottom: 2px solid var(--primary-gold);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
+
+.logo .templeName {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  /* Reduced from 1.6rem */
+  font-weight: 700;
+  color: var(--primary-maroon);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  /* Reduced from 1px */
+  white-space: nowrap;
+  /* Prevent wrapping */
+}
+
+
+.nav {
+  display: flex;
+  gap: 1.25rem;
+  /* Reduced from 2rem */
+  align-items: center;
+}
+
+.nav a {
+  font-weight: 600;
+  font-family: var(--font-serif);
+  color: var(--foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  /* Reduced from 1px */
+  font-size: 0.85rem;
+  /* Slightly reduced */
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav a:hover {
+  color: var(--primary-saffron);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.langToggle {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--background);
+  color: var(--primary-maroon);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--primary-maroon);
+  cursor: pointer;
+}
+
+
+/* Mobile Nav */
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    right: 0;
+    background-color: var(--surface);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-bottom: 2px solid var(--primary-gold);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.navOpen {
+    display: flex;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+}
